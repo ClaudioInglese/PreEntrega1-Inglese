@@ -1,0 +1,22 @@
+*{
+    margin: 0;	
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    border: solid 2px; 
+    border-color: rgb(51, 51, 58);
+    margin: 10px;
+    padding: 5px;
+    
+}
+
+.card header .nombreArticulo{
+    font-size: 16px;
+}
+
+.card picture img{
+    height: 140px;
+    width: 160px;
+}
