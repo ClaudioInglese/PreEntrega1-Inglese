@@ -14,10 +14,10 @@ const ItemDetail = ({id, nombre, imagen, category, descripcion, precio, stock}) 
                 <img src={imagen} alt={nombre} />                
             </picture>
             <section>
-                <p>Categoria: {category}</p>
-                <p>Descripcion: {descripcion}</p>
-                <p>Precio: ${precio}</p>
-                <p>Stock Disponible: {stock}</p>
+                <p><span>Categoria:</span> {category}</p>
+                <p><span>Descripcion:</span> {descripcion}</p>
+                <p><span>Precio:</span> ${precio}</p>
+                <p><span>Stock Disponible:</span> {stock}</p>
             </section>
             <footer> 
                 <ItemCount initial={1} stock={stock} onAdd={(quantity) => console.log('Cantidad Agregada', quantity)}/>

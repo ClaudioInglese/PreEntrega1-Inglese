@@ -12,14 +12,13 @@
     background-color: rgb(88, 85, 85);
     color: yellow;
     padding: 15px 25px 15px 25px;
-    font-size: 15px;
-    
+    font-size: 15px;    
 }
     
    
 .NavBarContainer nav img{
     width: 270px;
-    height: 60px;          
+    height: 70px;          
 }
 
 .NavBarContainer div .cart-icon{
@@ -45,3 +44,17 @@ div .greeting {
     text-decoration: none;
 }
 
+
+#root div div .greeting{
+    margin-bottom: 25px;
+    padding: 15px;
+}
+
+
+#root div div div {   
+    max-width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-wrap: wrap; 
+}

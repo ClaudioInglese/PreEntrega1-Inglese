@@ -12,8 +12,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer greeting={'Pedidos solo vía Web'} />} />
-          <Route path="/category/:categoryId" element={<ItemListContainer />} />
-          <Route path="/item/:ItemId" element={<ItemDetailContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer greeting={'Pedidos solo vía Web'}/>} />
+          <Route path="/item/:ItemId" element={<ItemDetailContainer greeting={'Pedidos solo vía Web'}/>} />
           <Route path="*" element={<h1>Error 404</h1>} />
         </Routes>
       </BrowserRouter>

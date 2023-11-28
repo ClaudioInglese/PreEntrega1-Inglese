@@ -26,10 +26,9 @@ const ItemDetailContainer = () => {
         <div className='ItemDetailContainer'>
             <div className='ItemDetails'>
                 <ItemDetail {...product} />
-            </div>
-        </div>
+            </div>            
+        </div>        
     )
-
 }
 
 export default ItemDetailContainer;

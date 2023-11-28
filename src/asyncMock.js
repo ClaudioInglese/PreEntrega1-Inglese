@@ -139,8 +139,27 @@ const products =[
         category: 'notebooks',
         descripcion: 'Notebook ASUS X515EA',
         stock: 3
-    }
+    },
 
+    {    
+        id: '15',
+        imagen: 'https://i.ibb.co/KW7dMHL/producto15.jpg',
+        nombre: 'Notebook 15" Lenovo V15 G3', 
+        precio: 1035000,
+        category: 'notebooks',
+        descripcion: 'Notebook 15" Lenovo V15 G3',
+        stock: 3
+    },
+
+    {    
+        id: '16',
+        imagen: 'https://i.ibb.co/frbbsmj/producto16.jpg',
+        nombre: 'Memoria DDR5 16GB Kingston Fury Renegade', 
+        precio: 149000,
+        category: 'hardware',
+        descripcion: 'Memoria DDR5 RGB Silver Black',
+        stock: 3
+    }
 ]
 
 
