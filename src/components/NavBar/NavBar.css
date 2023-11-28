@@ -1,44 +1,47 @@
-
-nav{
+.NavBarContainer nav{
     background-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;          
 }
 
-nav div button{
+.NavBarContainer nav .categories button{
     margin-left: 15px;
     background-color: rgb(88, 85, 85);
     color: yellow;
     padding: 15px 25px 15px 25px;
     font-size: 15px;
     
+}
     
-    
-
+   
+.NavBarContainer nav img{
+    width: 270px;
+    height: 60px;          
 }
 
-nav h3{
-    background-color: rgb(16, 88, 32);
-    padding: 15px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    
-}
-
-div .cart-icon{
+.NavBarContainer div .cart-icon{
     
     background-color: white;
     width: 45px;
     height: 45px;
 }
 
-div span{
+.NavBarContainer div span{
     color: white;
 }
 
 div .greeting {
+
     background-color: rgb(88, 85, 85);
     color: rgb(209, 209, 78);
+    text-align: center;
+    margin-top: 15px;
 }
+
+.NavBarContainer nav .categories a .ActiveOption{
+    text-decoration: none;
+}
+

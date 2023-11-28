@@ -1,0 +1,11 @@
+.counter .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.counter button{
+    margin: 10px;
+}

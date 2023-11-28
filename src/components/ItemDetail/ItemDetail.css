@@ -1,0 +1,21 @@
+article {
+    height: 500px;
+    width: 300px;
+    border: solid 2px;
+    border-color: black;
+    margin-top: 15px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+article header h2{
+    font-size: 16px;
+}
+
+article section{
+    margin-top: 30px;
+}
+
+article section p{
+    margin-top: 15px;
+}

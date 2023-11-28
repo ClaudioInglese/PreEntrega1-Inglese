@@ -1,0 +1,18 @@
+*{
+    margin: 0;	
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.ItemDetailContainer {
+    display: flex;
+}
+
+.ItemDetailContainer .ItemDetails{
+    display: flex;
+}
+
+article picture img{
+    width: 200px;
+    height: 180px;
+}

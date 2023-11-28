@@ -4,19 +4,18 @@ import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <nav>
-      <Link to='/'>
-        <h3>PowerHard Computacion</h3>
-      </Link>
+    <div className="NavBarContainer">
+        <nav>
+        <Link to='/'><img src="https://i.ibb.co/Tg0jjbD/powerhard-logo.jpg" alt="Logo"></img></Link>
 
-      <div className="categories">
-        <NavLink to="/" exact className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Inicio </NavLink>
-        <NavLink to="/category/hardware" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Hardware </NavLink>
-        <NavLink to="/category/perifericos" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Perifericos </NavLink>
-        <NavLink to="/category/notebooks" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> Notebooks </NavLink>
-      </div>
-      <CartWidget />
-    </nav>
+        <div className="categories">            
+            <NavLink to="/category/hardware" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> <button>Hardware</button> </NavLink>
+            <NavLink to="/category/perifericos" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> <button>Perifericos</button> </NavLink>
+            <NavLink to="/category/notebooks" className={({ isActive }) => isActive ? 'ActiveOption' : 'Option'}> <button>Notebooks</button> </NavLink>
+        </div>
+        <CartWidget />
+        </nav>
+    </div>
   );
 }
 
