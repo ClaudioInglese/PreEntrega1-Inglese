@@ -93,3 +93,49 @@ div .greeting {
     color: rgb(81, 81, 153);
 }
 
+#root div .createorder h1.finalizar {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(91, 91, 97);
+    color: rgb(209, 209, 78);
+}
+
+#root div .createorder .container-form form{
+    display: flex;
+    flex-direction: column;    
+
+}
+#root div .createorder .container-form form label {
+    margin: 5px;
+    text-align: end;
+    font-weight: bold;
+
+}
+
+#root div .createorder .container-form form label input{
+    margin-left: 10px;
+
+}
+
+#root div .createorder .container-form form div {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+#root div .createorder .container-form form div .button-create {
+    margin-top: 20px;
+    background-color: rgb(91, 91, 97);
+    padding: 7px;
+    color: yellow;  
+    margin-left: 75px;   
+}
+
+#root div .createorder .container-form form div .button-create:hover{
+    
+    background-color: rgb(57, 57, 59);
+     
+}

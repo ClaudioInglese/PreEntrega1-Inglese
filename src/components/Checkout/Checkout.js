@@ -129,8 +129,8 @@ const Checkout = () => {
     
 
     return (
-        <div>
-            <h1>Finalizar</h1>
+        <div className="createorder">
+            <h1 className="finalizar">Finalizar Compra</h1>
             <CheckoutForm onSubmit={createOrder} />
         </div>
     )    

@@ -23,8 +23,8 @@ const CheckoutForm = ({onSubmit}) => {
 
 
     return (
-        <div>
-            <form onSubmit={handleConfirm}>
+        <div className='container-form'>
+            <form className='form' onSubmit={handleConfirm}>
                 <label>
                         Nombre
                     <input type='text' value={name} onChange={({target}) => setName(target.value)} />
@@ -42,7 +42,7 @@ const CheckoutForm = ({onSubmit}) => {
                 </label>
 
                 <div>
-                    <button type='submit'>Crear Orden</button>
+                    <button className='button-create' type='submit'>Crear Orden</button>
                 </div>                  
             </form>
 
