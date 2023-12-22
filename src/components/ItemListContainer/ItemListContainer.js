@@ -1,36 +1,53 @@
 import {useState, useEffect} from 'react';
-import {getProducts, getProductByCategory} from "../../asyncMock"
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+
+import {getDocs, collection, query, where} from 'firebase/firestore';
+import {db} from '../../services/firebase/firebaseConfig'; 
 
 
 
 const ItemListContainer = ({ greeting }) => {
 
     const [ products, setProducts] = useState([])
+    const [ loading, setLoading] = useState(true)
 
-    const {categoryId} = useParams()
+    const {categoryId} = useParams();
+    
+        useEffect(() => {
+            setLoading(true)
 
-    useEffect(() => {
-        const asyncFunc = categoryId ? getProductByCategory : getProducts
+            const productosRef = categoryId
+            ? query(collection(db, 'products'), where('category', '==', categoryId))
+            : collection(db, 'products');
 
-        asyncFunc(categoryId)
-            .then(response => {
-                setProducts(response)
             
-            })
-            .catch(error => {
-                console.error(error)
-            })
-    }, [categoryId])
+            getDocs(productosRef)
+                .then((response) => {
+                    setProducts(
+                        response.docs.map((doc) => {
+                            return {...doc.data(), id: doc.id}
+                        })
+                    )
+                })
+                .catch((error) => {
+                    console.error('Error fetching data:', error);
+                })
+                .finally(() => {
+                    setLoading(false);
+                });
 
-
-    return ( 
-        <div>
-            <h1 className="greeting">{greeting}</h1>   
-            <ItemList products={products} />         
-        </div>
-    )
+        }, [categoryId])
+      
+   
+        return ( 
+            <div>
+                <h1 className="greeting">{greeting}</h1> 
+                <section> 
+                    <ItemList products={products} />  
+                </section>        
+            </div>
+        )
 }
 
 export default ItemListContainer;

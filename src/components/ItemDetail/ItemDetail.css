@@ -1,5 +1,5 @@
 article {    
-    height: 550px;
+    height: 600px;
     width: 300px;
     border: solid 2px;
     border-color: black;
@@ -34,4 +34,17 @@ article section p span{
     justify-content: center;
     flex-direction: column;  
     margin-top: 35px;  
+}
+
+.terminar{
+    background-color: rgb(88, 85, 85);       
+    margin-top: 25px;
+    padding: 8px;
+
+}
+
+.terminar a{
+    color: rgb(209, 209, 78);
+    text-decoration: none;    
+
 }

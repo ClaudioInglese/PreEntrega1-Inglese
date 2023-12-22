@@ -137,7 +137,7 @@ const products =[
         nombre: 'Notebook Lenovo Legion 5 Gen 6', 
         precio: 1500000,
         category: 'notebooks',
-        descripcion: 'Notebook ASUS X515EA',
+        descripcion: 'Notebook Lenovo Legion 5 Gen 6',
         stock: 3
     },
 
@@ -158,7 +158,7 @@ const products =[
         precio: 149000,
         category: 'hardware',
         descripcion: 'Memoria DDR5 RGB Silver Black',
-        stock: 3
+        stock: 4
     }
 ]
 
