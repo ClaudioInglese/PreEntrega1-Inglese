@@ -38,6 +38,14 @@ const ItemListContainer = ({ greeting }) => {
                 });
 
         }, [categoryId])
+
+        if (loading) {
+            return (
+                <div>
+                    <p className='loadingdetails'>Cargando...por favor espere</p>
+                </div>
+            )        
+        } 
       
    
         return ( 

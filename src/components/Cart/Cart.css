@@ -40,11 +40,32 @@ h3.totalprice {
    
 }
 
-.nodcartprods {
-    margin-top: 150px;
-    text-align: center;
+
+.cart-container .seguircomprando {
+    max-width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+
 }
 
+.cart-container div .nocartprods {
+    margin-top: 150px;
+    
+    text-align: center;    
+}
+
+
+.cart-container .seguircomprando .seguir{
+    width: 300px;
+    height: 40px; 
+    background-color: rgb(91, 91, 97);
+    color: rgb(209, 209, 78);  
+    padding: 15px;              
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
 
 
 .vaciar {

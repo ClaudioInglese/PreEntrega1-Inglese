@@ -1,7 +1,6 @@
 import './Cart.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/CartContext'
-// import CartItem from '../CartItem/CartItem'
 import { Link } from 'react-router-dom'
 
 const Cart = () =>{
@@ -40,7 +39,14 @@ const Cart = () =>{
                     <button className='vaciar' onClick={() => clearCart()}>Vaciar Carrito</button> 
                     <button><Link to='/checkout' className='checkout'>Finalizar Compra</Link></button>        
                 </div> :
-                <h2 className='nocartprods'>No hay productos en el carrito</h2>              
+                <div className='seguircomprando'>
+                    <h2 className='nocartprods'>No hay productos en el carrito</h2> 
+                    <button><Link to='/' className='seguir'>Seguir Comprando</Link></button>   
+                </div>
+                
+                 
+                
+                
             }  
               
              

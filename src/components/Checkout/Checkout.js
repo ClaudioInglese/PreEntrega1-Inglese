@@ -69,6 +69,10 @@ const Checkout = () => {
                 const productAddedToCart = cart.find(prod => prod.id === doc.id)
                 const prodQuantity = productAddedToCart?.quantity
 
+                console.log('ID del producto en Firestore:', doc.id);
+                console.log('Cantidad en el carrito:', prodQuantity);
+                console.log('Stock en Firestore:', stockDb);
+
                 if(stockDb >= prodQuantity) {
                     batch.update(doc.ref, { stock: stockDb - prodQuantity })  
                     console.log('Actualizando stock en Firestore:', doc.id, 'Nuevo stock:', stockDb - prodQuantity);              
